@@ -9,11 +9,17 @@ public class Poggers extends SpecialString{
 	@Override
 	public String funkifyText(String s) {
 		String Alphabet = "abcdefghijklmnopqrstuvwxyz";
+		String holder = "";
+		s.toLowerCase();
 		for(int i = 0; i < s.length(); i++) {
-			e
+			for(int g = 0; g < Alphabet.length(); g++) {
+				if(s.charAt(i) == (Alphabet.charAt(g))) {
+					holder += g;
+				}
+			}
 		}
 		
-		return s;
+		return holder;
 		
 	}
 	
